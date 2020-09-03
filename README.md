@@ -12,18 +12,14 @@ Le fonctionnement de  base de données est assurée par le logiciel saas Elephan
 	• Se connecter à la base de données.
 
 ## Création de la table « Pays » :
-    • Dans l’onglet « Navigateur de bases de données, cliquer deux fois sur « ylytfcfo » (ou cliquer une fois sur la flèche d’arborescence, juste à côté). La connexion à la base de données si ce n’est fait.
-    • Cliquer sur la ligne de la base de données « ylytfcfo ».
+    • Dans l’onglet « Navigateur de bases de données, cliquer sur la ligne de la base de données.
     • Dans le menu, sélectionner « Fichier » - « Ouvrir un fichier » et dans le dossier   « Les pays en chiffre », ouvrir le dossier « sql » et choisir le fichier « ajout table pays.sql ».
     • Dans l’onglet SQL du fichier chargé, cliquer sur l’icone « Exécuter l’instruction SQL » (flèche jaune). La table est crée avec son contenu.
 
 # Démarrage
 
 Lancer DBeaver
-
-Dans l’onglet « Navigateur de bases de données, cliquer deux fois sur « ylytfcfo » (ou cliquer une fois sur la flèche d’arborescence, juste à côté). La connexion à la base de données si ce n’est fait.
-Cliquer sur la ligne de la base de données « ylytfcfo ».
-Dans le menu, sélectionner « Editeur SQL » - « Nouvel éditeur SQL ». Celui-ci sera utilisé ultérieurement pour exécuter séparément certaines requêtes.
+Dans l’onglet « Navigateur de bases de données, lancer la base de données.
 
 # Prérequis 
 
@@ -32,39 +28,39 @@ Télécharger les données dans ce répertoire git : https://github.com/NicamSh
 Installer DBeaver
 Le fichier Pays.csv doit être dans le même dossier que le fichier « ajout table pays.sql ».
 
-Test
+Tests
 
-## Créer une fonction SQL qui retourne le pays (sous format de TABLE) qui correspond au critère passé en paramètre.  
+## 1 - Créer une fonction SQL qui retourne le pays (sous format de TABLE) qui correspond au critère passé en paramètre.  
     • Dans le menu, sélectionner « Fichier » - « Ouvrir un fichier » et dans le dossier   « Les pays en chiffre », ouvrir le dossier « sql » et choisir le fichier « fonction selection pays.sql ».
     • Exécuter la requête.
     • Saisir et exécuter la requête suivante :
-'''requete
+```requete
 SELECT * FROM selectionPays('nom du pays');
-'''
+```
 
-## Créer une procédure SQL qui insert un nouveau pays avec des données random 
+## 2 - Créer une procédure SQL qui insert un nouveau pays avec des données random 
     • Dans le menu, sélectionner « Fichier » - « Ouvrir un fichier » et dans le dossier   « Les pays en chiffre », ouvrir le dossier « sql » et choisir le fichier « fonction selection pays.sql ».
     • Exécuter la requête.
     • Saisir et exécuter la requête suivante :
-'''requete
+```requete
 CALL insertionPays('nom du pays');
-'''
+```
 
-## Configurer un trigger qui va mettre à jour la colonne de la table correspondant à la date de l'insertion 
+## 3 - Configurer un trigger qui va mettre à jour la colonne de la table correspondant à la date de l'insertion 
     • Dans le menu, sélectionner « Fichier » - « Ouvrir un fichier » et dans le dossier   « Les pays en chiffre », ouvrir le dossier « sql » et choisir le fichier « creation trigger date.sql ».
     • Exécuter les trois requêtes.
     • Saisir et exécuter la requête suivante :
-'''requete
+```requete
 CALL insertionPays('nom du pays');
-'''
+```
 
-## Réaliser une fonction ou procédure stockée pour retourner les pays qui sont regroupés par 4 tranches (à définir) de densité de population 
+## 4 - Réaliser une fonction ou procédure stockée pour retourner les pays qui sont regroupés par 4 tranches (à définir) de densité de population 
     • Dans le menu, sélectionner « Fichier » - « Ouvrir un fichier » et dans le dossier   « Les pays en chiffre », ouvrir le dossier « sql » et choisir le fichier « fonction classement repartition pays.sql ».
     • Exécuter la requête.
     • Saisir et exécuter la requête suivante :
-'''requete
+```requete
 SELECT * FROM classementRepartitionPays();
-'''
+```
 
 # Aide
 

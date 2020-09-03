@@ -1,9 +1,9 @@
 # Description
 
-Le brief "Les pays en chiffre" a pour objectif l’utilisation de la gestion de données sur les pays en utilisant une base de données.
-Les données proviennent d’un fichier au format csv au préalable formatée et sont importées dans la base de données.
-Le fonctionnement de  base de données est assurée par le logiciel saas ElephantSQL et son administration est gérée par le logiciel DBeaver.
-Le fuseau horaire sélectionné pour le saas est EU-West-1 (Ireland).
+    • Le brief "Les pays en chiffre" a pour objectif l’utilisation de la gestion de données sur les pays en utilisant une base de données.
+    • Les données proviennent d’un fichier au format csv au préalable formatée et sont importées dans la base de données.
+    • Le fonctionnement de  base de données est assurée par le logiciel saas ElephantSQL et son administration est gérée par le logiciel DBeaver.
+    • Le fuseau horaire sélectionné pour le saas est EU-West-1 (Ireland).
 
 
 # Installation
@@ -21,16 +21,16 @@ Le fuseau horaire sélectionné pour le saas est EU-West-1 (Ireland).
 
 # Démarrage
 
-Lancer DBeaver
-Dans l’onglet "Navigateur de bases de données, lancer la base de données.
+    • Lancer DBeaver
+    • Dans l’onglet "Navigateur de bases de données, lancer la base de données.
 
 
 # Prérequis 
 
-Une instance ElephantSQL doit être au préalable préparée.
-Télécharger les données dans ce répertoire git : https://github.com/NicamShilova/Les-pays-en-chiffre.
-Installer DBeaver
-Le fichier Pays.csv doit être dans le même dossier que le fichier "ajout table pays.sql".
+    • Une instance ElephantSQL doit être au préalable préparée.
+    • Télécharger les données dans ce répertoire git : https://github.com/NicamShilova/Les-pays-en-chiffre.
+    • Installer DBeaver
+    • Le fichier Pays.csv doit être dans le même dossier que le fichier "ajout table pays.sql".
 
 
 # Tests

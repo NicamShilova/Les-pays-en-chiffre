@@ -4,7 +4,7 @@ DO $$
     EXCEPTION
         WHEN duplicate_column THEN RAISE NOTICE ' column DateUpdate already exists in pays.';
     END;
-$$
+$$;
 
 CREATE OR REPLACE FUNCTION audit_pays() RETURNS TRIGGER AS $dateupdate_audit$
 BEGIN

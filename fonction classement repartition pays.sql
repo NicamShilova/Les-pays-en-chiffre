@@ -14,7 +14,7 @@ BEGIN
 				Population::integer, 
 				Density ::integer, 
 				case
-					WHEN Density = 0 THEN 'Basse'
+					WHEN Density = 0 THEN 'Petite'
 					WHEN Density > 0 and Population / Density < 100 THEN 'Petite'
 		            WHEN Density > 0 and Population / Density BETWEEN 100 AND 9999 THEN 'Moyenne' 
 		            WHEN Density > 0 and Population / Density BETWEEN 10000 AND 99999 THEN 'Haute'
@@ -24,4 +24,4 @@ BEGIN
 		group by country, population, Importance, density 
 		order by Importance asc;
 END;
-$$
+$$;

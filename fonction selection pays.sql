@@ -21,4 +21,4 @@ BEGIN
 		FROM pays
 		WHERE country = nomPays;
 END;
-$$
+$$;
